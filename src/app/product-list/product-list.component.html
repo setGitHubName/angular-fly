@@ -1,0 +1,9 @@
+<div *ngFor="let product of products; index as productIdd">
+
+  <h3>
+    <a (click)="click()"[title]="product.name + ' details'" [routerLink]="['/products', productIdd]">
+      {{ product.name }}
+    </a>
+  </h3>
+<!-- . . . -->
+</div>
